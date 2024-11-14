@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/renavest-mobile/static/css/main.1c945f11.css",
+    "main.js": "/renavest-mobile/static/js/main.39cd5769.js",
+    "static/js/653.87c796e5.chunk.js": "/renavest-mobile/static/js/653.87c796e5.chunk.js",
+    "static/js/806.f5f50cd5.chunk.js": "/renavest-mobile/static/js/806.f5f50cd5.chunk.js",
+    "static/js/923.8dfae6eb.chunk.js": "/renavest-mobile/static/js/923.8dfae6eb.chunk.js",
+    "static/js/627.79df9f9c.chunk.js": "/renavest-mobile/static/js/627.79df9f9c.chunk.js",
+    "static/js/938.87c191d2.chunk.js": "/renavest-mobile/static/js/938.87c191d2.chunk.js",
+    "static/js/247.346f5e6d.chunk.js": "/renavest-mobile/static/js/247.346f5e6d.chunk.js",
+    "static/js/82.788aee15.chunk.js": "/renavest-mobile/static/js/82.788aee15.chunk.js",
+    "static/js/768.2ccc4c1f.chunk.js": "/renavest-mobile/static/js/768.2ccc4c1f.chunk.js",
+    "static/js/834.f9cc7f4a.chunk.js": "/renavest-mobile/static/js/834.f9cc7f4a.chunk.js",
+    "static/js/453.55d5925a.chunk.js": "/renavest-mobile/static/js/453.55d5925a.chunk.js",
+    "index.html": "/renavest-mobile/index.html",
+    "main.1c945f11.css.map": "/renavest-mobile/static/css/main.1c945f11.css.map",
+    "main.39cd5769.js.map": "/renavest-mobile/static/js/main.39cd5769.js.map",
+    "653.87c796e5.chunk.js.map": "/renavest-mobile/static/js/653.87c796e5.chunk.js.map",
+    "806.f5f50cd5.chunk.js.map": "/renavest-mobile/static/js/806.f5f50cd5.chunk.js.map",
+    "923.8dfae6eb.chunk.js.map": "/renavest-mobile/static/js/923.8dfae6eb.chunk.js.map",
+    "627.79df9f9c.chunk.js.map": "/renavest-mobile/static/js/627.79df9f9c.chunk.js.map",
+    "938.87c191d2.chunk.js.map": "/renavest-mobile/static/js/938.87c191d2.chunk.js.map",
+    "247.346f5e6d.chunk.js.map": "/renavest-mobile/static/js/247.346f5e6d.chunk.js.map",
+    "82.788aee15.chunk.js.map": "/renavest-mobile/static/js/82.788aee15.chunk.js.map",
+    "768.2ccc4c1f.chunk.js.map": "/renavest-mobile/static/js/768.2ccc4c1f.chunk.js.map",
+    "834.f9cc7f4a.chunk.js.map": "/renavest-mobile/static/js/834.f9cc7f4a.chunk.js.map",
+    "453.55d5925a.chunk.js.map": "/renavest-mobile/static/js/453.55d5925a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c945f11.css",
+    "static/js/main.39cd5769.js"
+  ]
+}

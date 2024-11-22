@@ -1,0 +1,18 @@
+.pageContent {
+
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.buttonContainer {
+    display: flex;
+}
+
+.buttonContainer ion-button {
+    display: flex;
+    flex: 1;
+}

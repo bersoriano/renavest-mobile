@@ -29,6 +29,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 import './App.css';
 import { ThemeProvider } from './theme/ThemeProvider';
+import AppRouter from './router/Routes'
 
 import { 
   IonApp,
@@ -40,25 +41,13 @@ import {
   IonButton
 } from '@ionic/react';
 
-
-
 setupIonicReact({ mode: 'ios' });
 
 function App() {
   return (
     <ThemeProvider>
       <IonApp>
-        <IonHeader>
-          <IonToolbar>
-          <IonTitle>Financial Therapy by Renavest</IonTitle>
-        </IonToolbar>
-        </IonHeader>
-        <IonContent className="ion-padding">
-          <h1>Welcome to Renavest</h1>
-          <p>Lets get started!</p>
-          <IonButton>Default</IonButton>
-          <IonButton disabled={true}>Disabled</IonButton>
-        </IonContent>
+        <AppRouter />
       </IonApp>
     </ThemeProvider>
   );

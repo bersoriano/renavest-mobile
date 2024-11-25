@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/renavest-mobile/static/css/main.b6dbb33e.css",
-    "main.js": "/renavest-mobile/static/js/main.b82080fb.js",
+    "main.css": "/renavest-mobile/static/css/main.f1999875.css",
+    "main.js": "/renavest-mobile/static/js/main.817cbdc6.js",
     "static/js/653.87c796e5.chunk.js": "/renavest-mobile/static/js/653.87c796e5.chunk.js",
     "static/js/867.21ad15e5.chunk.js": "/renavest-mobile/static/js/867.21ad15e5.chunk.js",
     "static/js/923.8dfae6eb.chunk.js": "/renavest-mobile/static/js/923.8dfae6eb.chunk.js",
@@ -15,8 +15,8 @@
     "static/js/453.55d5925a.chunk.js": "/renavest-mobile/static/js/453.55d5925a.chunk.js",
     "static/media/blackgirl.png": "/renavest-mobile/static/media/blackgirl.86efb76fedbd20091d64.png",
     "index.html": "/renavest-mobile/index.html",
-    "main.b6dbb33e.css.map": "/renavest-mobile/static/css/main.b6dbb33e.css.map",
-    "main.b82080fb.js.map": "/renavest-mobile/static/js/main.b82080fb.js.map",
+    "main.f1999875.css.map": "/renavest-mobile/static/css/main.f1999875.css.map",
+    "main.817cbdc6.js.map": "/renavest-mobile/static/js/main.817cbdc6.js.map",
     "653.87c796e5.chunk.js.map": "/renavest-mobile/static/js/653.87c796e5.chunk.js.map",
     "867.21ad15e5.chunk.js.map": "/renavest-mobile/static/js/867.21ad15e5.chunk.js.map",
     "923.8dfae6eb.chunk.js.map": "/renavest-mobile/static/js/923.8dfae6eb.chunk.js.map",
@@ -30,7 +30,7 @@
     "453.55d5925a.chunk.js.map": "/renavest-mobile/static/js/453.55d5925a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6dbb33e.css",
-    "static/js/main.b82080fb.js"
+    "static/css/main.f1999875.css",
+    "static/js/main.817cbdc6.js"
   ]
 }

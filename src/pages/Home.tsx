@@ -20,7 +20,8 @@ import {
     IonRefresher,
     IonAvatar,
     IonImg,
-    useIonRouter
+    useIonRouter,
+    IonChip
 } from '@ionic/react';
 import { homeOutline, notificationsOutline, personOutline } from 'ionicons/icons';
 import profilePhoto from '../assets/blackgirl.png';
@@ -57,6 +58,17 @@ const Home: React.FC = () => {
                 <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
                     <IonRefresherContent></IonRefresherContent>
                 </IonRefresher>
+                <h1 className={styles.homeTitle}>Financial Therapists</h1>
+                <div className='chip-container'>
+                    <div className={styles.chipRow}>
+                    <IonChip>Stocks</IonChip>                           
+                    <IonChip>ETFs</IonChip>                           
+                    <IonChip>Crypto</IonChip>
+                    <IonChip>401k</IonChip>                           
+                    <IonChip>ETFs</IonChip>                           
+                    <IonChip>Basics</IonChip>                           
+                    </div>                    
+                </div>                    
                 <IonCard className={styles.profileCard}>
                     <IonImg
                         src={profilePhoto}

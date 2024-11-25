@@ -32,7 +32,7 @@ import {
   
   const AppRouter: React.FC = () => {
     return (
-      <IonReactRouter basename="/renavest-mobile">
+      <IonReactRouter>
         <IonRouterOutlet>
           <Route path="/" component={TabsNavigation} />
         </IonRouterOutlet>

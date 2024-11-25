@@ -20,3 +20,12 @@
 .App-link {
   color: #61dafb;
 }
+
+@media screen and (min-width: 700px) {
+  ion-app {
+    max-width: 50%;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;  
+  }
+}

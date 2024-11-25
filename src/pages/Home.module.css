@@ -1,3 +1,22 @@
+.homeTitle {
+    margin: 1rem;
+    text-align: center;    
+}
+
+.chipRow {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow: scroll;  
+    padding: 0 1rem;  
+}
+
+ion-chip {
+    min-width: 80px;
+    width: auto;
+    text-align: center;    
+}
+
 .therapistList {
 
 }

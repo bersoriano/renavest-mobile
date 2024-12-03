@@ -51,7 +51,7 @@ const Home: React.FC = () => {
                     <IonTitle>Welcome to Renavest</IonTitle>
                     <IonButton slot="end" fill="clear">
                         <IonIcon icon={notificationsOutline} />
-                        <IonBadge color="danger">{notifications}</IonBadge>
+                        {/* <IonBadge color="danger">{notifications}</IonBadge> */}
                     </IonButton>
                 </IonToolbar>
             </IonHeader>
@@ -60,82 +60,39 @@ const Home: React.FC = () => {
                 <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
                     <IonRefresherContent></IonRefresherContent>
                 </IonRefresher>
-                <PageTitle title='Financial Therapists'></PageTitle>
-                <div className='chip-container'>
+                <PageTitle title='Meet Your Therapist'></PageTitle>
+                {/* <div className='chip-container'>
                     <div className={styles.chipRow}>
-                    <IonChip>Stocks</IonChip>                           
+                    <IonChip>Couples</IonChip>                           
                     <IonChip>ETFs</IonChip>                           
                     <IonChip>Crypto</IonChip>
                     <IonChip>401k</IonChip>                           
                     <IonChip>ETFs</IonChip>                           
                     <IonChip>Basics</IonChip>                           
                     </div>                    
-                </div>
+                </div> */}
 
                 {TherapistsList.map((therapist, index) => (
                     <IonCard key={index} className={styles.profileCard}>
-                        <IonImg
-                            className={styles.profileUrl}
-                            src={therapist.profileUrl || profilePhoto}
-                            alt={therapist.name}
-                        ></IonImg>
+                        <div className={styles.profileImgContainer}>
+                            <IonImg
+                                className={styles.profileUrl}
+                                src={therapist.profileUrl || profilePhoto}
+                                alt={therapist.name}
+                            ></IonImg>
+                            <IonLabel className={styles.profileImgLabel}>
+                                <IonBadge color="primary" slot="end">Preferred</IonBadge>                            
+                            </IonLabel>                          
+                        </div>
                         <IonCardHeader>
                             <IonCardTitle className={styles.profileName}>{therapist.name}</IonCardTitle>
-                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}</IonCardSubtitle>
+                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}                              
+                            </IonCardSubtitle>
                         </IonCardHeader>
                         <IonCardContent className={styles.profileIntroduction}>"{therapist.introduction}"</IonCardContent>
                         <IonButton expand="block" fill="clear" default-href="/profile" onClick={goToProfile}>View Profile</IonButton>
                     </IonCard>
                 ))}
-
-                <IonCard>
-                    <IonCardHeader>
-                        <IonCardTitle>Featured Therapists</IonCardTitle>
-                    </IonCardHeader>
-                    <IonCardContent>
-                        <IonList >
-                            <IonItem className={styles.therapistItem} button detail>
-                                <IonAvatar className="profile-avatar">
-                                    <img src={profilePhoto} alt="BlackGirl" />
-                                </IonAvatar>
-                                <IonLabel>Martita Perez</IonLabel>
-                            </IonItem>
-                            <IonItem button detail>
-                                <IonIcon icon={personOutline} slot="start" />
-                                <IonLabel>Fatima Lopez</IonLabel>
-                            </IonItem>
-                            <IonItem className={styles.therapistItem} button detail>
-                                <IonAvatar className="profile-avatar">
-                                    <img src={profilePhoto} alt="BlackGirl" />
-                                </IonAvatar>
-                                <IonLabel>Martita Perez</IonLabel>
-                            </IonItem>              
-                        </IonList>
-                    </IonCardContent>          
-                </IonCard>
-
-                <IonCard>
-                    <IonCardHeader>
-                        <IonCardTitle>Recent Activity</IonCardTitle>
-                    </IonCardHeader>
-                    <IonCardContent>
-                        <IonList>
-                            <IonItem>
-                                <IonLabel>
-                                    <h2>New Feature Added</h2>
-                                    <p>Check out our latest updates!</p>
-                                </IonLabel>
-                                <IonBadge color="success" slot="end">New</IonBadge>
-                            </IonItem>
-                            <IonItem>
-                                <IonLabel>
-                                    <h2>Welcome Message</h2>
-                                    <p>Getting started with Ionic React</p>
-                                </IonLabel>
-                            </IonItem>
-                        </IonList>
-                    </IonCardContent>
-                </IonCard>
 
             </IonContent>
         </IonPage>

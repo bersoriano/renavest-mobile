@@ -14,7 +14,7 @@
 ion-chip {
     min-width: 80px;
     width: auto;
-    text-align: center;
+    margin: 0;
     justify-content: center;    
 }
 
@@ -36,8 +36,20 @@ ion-chip {
     
 }
 
+.profileImgLabel {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+}
+
+.profileImgContainer {
+    position: relative;
+}
+
 .profileCard ion-button {
     margin: 0 auto 0rem;
     display: block;
     background-color: #c0c0c012;  
 }
+

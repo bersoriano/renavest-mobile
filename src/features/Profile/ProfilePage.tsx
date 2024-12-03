@@ -36,7 +36,6 @@ const Profile: React.FC = () => {
           ></IonImg>          
           <div className={styles.container}>
             <div className={styles.buttonContainer}>
-              <IonButton fill="outline">Subscribe</IonButton>
               <IonButton fill="outline">Request Meeting</IonButton>
             </div>              
             <h1>Fatima Lopez</h1>

@@ -28,13 +28,13 @@ import {
           <IonTabButton tab="home" href="/home">
             <IonIcon icon={home} />
             <IonLabel>Home</IonLabel>
-            <IonBadge>6</IonBadge>
+            {/* <IonBadge>6</IonBadge> */}
           </IonTabButton>
 
-          <IonTabButton tab="profile" href="/profile">
+          {/* <IonTabButton tab="profile" href="/profile">
             <IonIcon icon={person} />
             <IonLabel>Profile</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
         </IonTabBar>
       </IonTabs>
     );

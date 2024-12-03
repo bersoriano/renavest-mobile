@@ -24,8 +24,10 @@ import {
     IonChip
 } from '@ionic/react';
 import { homeOutline, notificationsOutline, personOutline } from 'ionicons/icons';
-import profilePhoto from '../assets/blackgirl.png';
+import profilePhoto from '../../assets/blackgirl.png';
 import styles from './Home.module.css';
+import PageTitle from '../../shared/PageTitle/PageTitle';
+import TherapistsList from '../../shared/config/therapistList';
 
 const Home: React.FC = () => {
     const [notifications, setNotifications] = useState(3);
@@ -58,7 +60,7 @@ const Home: React.FC = () => {
                 <IonRefresher slot="fixed" onIonRefresh={handleRefresh}>
                     <IonRefresherContent></IonRefresherContent>
                 </IonRefresher>
-                <h1 className={styles.homeTitle}>Financial Therapists</h1>
+                <PageTitle title='Financial Therapists'></PageTitle>
                 <div className='chip-container'>
                     <div className={styles.chipRow}>
                     <IonChip>Stocks</IonChip>                           
@@ -68,19 +70,23 @@ const Home: React.FC = () => {
                     <IonChip>ETFs</IonChip>                           
                     <IonChip>Basics</IonChip>                           
                     </div>                    
-                </div>                    
-                <IonCard className={styles.profileCard}>
-                    <IonImg
-                        src={profilePhoto}
-                        alt="Cool Girl"
-                    ></IonImg>
-                    <IonCardHeader>
-                        <IonCardTitle>Fatima Lopez</IonCardTitle>
-                        <IonCardSubtitle>Financial Therapist</IonCardSubtitle>
-                    </IonCardHeader>
-                    <IonCardContent>"Money is more than numbers—it's a reflection of your journey, values, and dreams. Together, we’ll turn financial stress into strength and build a future that honors where you come from and where you’re going."</IonCardContent>
-                    <IonButton expand="block" fill="clear" default-href="/profile" onClick={goToProfile}>View Profile</IonButton>
-               </IonCard>
+                </div>
+
+                {TherapistsList.map((therapist, index) => (
+                    <IonCard key={index} className={styles.profileCard}>
+                        <IonImg
+                            className={styles.profileUrl}
+                            src={therapist.profileUrl || profilePhoto}
+                            alt={therapist.name}
+                        ></IonImg>
+                        <IonCardHeader>
+                            <IonCardTitle className={styles.profileName}>{therapist.name}</IonCardTitle>
+                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}</IonCardSubtitle>
+                        </IonCardHeader>
+                        <IonCardContent className={styles.profileIntroduction}>"{therapist.introduction}"</IonCardContent>
+                        <IonButton expand="block" fill="clear" default-href="/profile" onClick={goToProfile}>View Profile</IonButton>
+                    </IonCard>
+                ))}
 
                 <IonCard>
                     <IonCardHeader>

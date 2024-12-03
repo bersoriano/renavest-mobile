@@ -29,7 +29,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 import './App.css';
 import { ThemeProvider } from './theme/ThemeProvider';
-import AppRouter from './router/Routes'
+import AppRouter from './core/router/Routes'
 
 import { 
   IonApp,

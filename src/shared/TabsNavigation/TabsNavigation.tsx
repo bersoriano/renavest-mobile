@@ -10,8 +10,8 @@ import {
   import './TabsNavigation.css'
   import { home, person } from 'ionicons/icons';
   import { Redirect, Route } from 'react-router-dom';
-  import HomePage from '../../../src/pages/Home';
-  import ProfilePage from '../../../src/pages/Profile/ProfilePage';
+  import HomePage from '../../features/Home/Home';
+  import ProfilePage from '../../features/Profile/ProfilePage';
   
   const TabsNavigation: React.FC = () => {
     return (
@@ -29,11 +29,6 @@ import {
             <IonIcon icon={home} />
             <IonLabel>Home</IonLabel>
             <IonBadge>6</IonBadge>
-          </IonTabButton>
-
-          <IonTabButton tab="home" href="/home">
-            <IonIcon icon={"book-outline"} />
-            <IonLabel>Learn</IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="profile" href="/profile">

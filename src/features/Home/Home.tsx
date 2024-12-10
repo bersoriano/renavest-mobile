@@ -23,7 +23,7 @@ import {
     useIonRouter,
     IonChip
 } from '@ionic/react';
-import { homeOutline, notificationsOutline, personOutline } from 'ionicons/icons';
+import { notificationsOutline } from 'ionicons/icons';
 import profilePhoto from '../../assets/blackgirl.png';
 import styles from './Home.module.css';
 import PageTitle from '../../shared/PageTitle/PageTitle';
@@ -40,8 +40,9 @@ const Home: React.FC = () => {
         }, 1000);
     };
     const router = useIonRouter();
-    const goToProfile = () => {
-      router.push('/profile', 'forward', 'push');
+    
+    const goToProfile = (itemId:any) => {
+      router.push(`/profile/${itemId}`, 'forward', 'push');
     };
 
     return (
@@ -90,7 +91,7 @@ const Home: React.FC = () => {
                             </IonCardSubtitle>
                         </IonCardHeader>
                         <IonCardContent className={styles.profileIntroduction}>"{therapist.introduction}"</IonCardContent>
-                        <IonButton expand="block" fill="clear" default-href="/profile" onClick={goToProfile}>View Profile</IonButton>
+                        <IonButton expand="block" fill="clear" onClick={()=> goToProfile(therapist.id)}>View Profile</IonButton>
                     </IonCard>
                 ))}
 

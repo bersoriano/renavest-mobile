@@ -1,5 +1,6 @@
 const TherapistsList = [
     {
+      id: 1,
       name: "George Blount",
       title: "Financial Therapist",
       clients: ["millennials", "entrepreneurs", "professionals"],
@@ -7,9 +8,11 @@ const TherapistsList = [
       yoe: "8",
       song: "Money by Pink Floyd",
       profileUrl: "https://i.pravatar.cc/300?img=59",
-      introduction: "Money is more than numbers—it's a reflection of your journey, values, and dreams. Together, we'll turn financial stress into strength and build a future that honors where you come from and where you're going."
+      introduction: "Money is more than numbers—it's a reflection of your journey, values, and dreams. Together, we'll turn financial stress into strength and build a future that honors where you come from and where you're going.",
+      expertise: ["Investing", "Personal finance for beginners"]
     },
     {
+      id: 2,
       name: "Dr. Shay Harris-Pierre",
       title: "Financial Therapist",
       clients: ["couples", "healthcare workers", "executives"],
@@ -17,9 +20,11 @@ const TherapistsList = [
       yoe: "12",
       song: "Independent Women by Destiny's Child",
       profileUrl: "https://i.pravatar.cc/300?img=25",
-      introduction: "Your financial story is unique and deserves to be heard. Through our work together, we'll explore the emotional aspects of money while building practical skills for lasting financial wellness."
+      introduction: "Your financial story is unique and deserves to be heard. Through our work together, we'll explore the emotional aspects of money while building practical skills for lasting financial wellness.",
+      expertise: ["Investing", "Personal finance for beginners"]
     },
     {
+      id: 3,
       name: "Sarah Carr",
       title: "Financial Therapist",
       clients: ["retirees", "divorcees", "small business owners"],
@@ -27,9 +32,11 @@ const TherapistsList = [
       yoe: "15",
       song: "Take it Easy by Eagles",
       profileUrl: "https://i.pravatar.cc/300?img=26",
-      introduction: "Life transitions bring both challenges and opportunities. I help you navigate financial changes with confidence, creating a roadmap that aligns with your values and supports your emotional wellbeing."
+      introduction: "Life transitions bring both challenges and opportunities. I help you navigate financial changes with confidence, creating a roadmap that aligns with your values and supports your emotional wellbeing.",
+      expertise: ["Retirement planning", "Divorce finances"]
     },
     {
+      id: 4,
       name: "Nathan Astle",
       title: "Financial Therapist",
       clients: ["young professionals", "startup founders", "tech workers"],
@@ -37,9 +44,11 @@ const TherapistsList = [
       yoe: "6",
       song: "Can't Hold Us by Macklemore",
       profileUrl: "https://i.pravatar.cc/300?img=33",
-      introduction: "Financial success isn't just about spreadsheets—it's about understanding your relationship with money. Let's work together to create strategies that empower both your wallet and your mindset."
+      introduction: "Financial success isn't just about spreadsheets—it's about understanding your relationship with money. Let's work together to create strategies that empower both your wallet and your mindset.",
+      expertise: ["Investing", "Personal finance for beginners"]
     },
     {
+      id: 5,
       name: "Natasha Knox",
       title: "Financial Therapist",
       clients: ["women in tech", "immigrants", "career changers"],
@@ -47,9 +56,11 @@ const TherapistsList = [
       yoe: "10",
       song: "Girl on Fire by Alicia Keys",
       profileUrl: "https://i.pravatar.cc/300?img=5",
-      introduction: "Your financial journey is shaped by your experiences and cultural background. Together, we'll build a framework that embraces your identity while fostering financial growth and confidence."
+      introduction: "Your financial journey is shaped by your experiences and cultural background. Together, we'll build a framework that embraces your identity while fostering financial growth and confidence.",
+      expertise: ["Credit repair"]
     },
     {
+      id: 6,
       name: "LaQueshia Clemons",
       title: "Financial Therapist",
       clients: ["first-generation professionals", "educators", "nonprofit workers"],
@@ -57,9 +68,11 @@ const TherapistsList = [
       yoe: "7",
       song: "Started From The Bottom by Drake",
       profileUrl: "https://i.pravatar.cc/300?img=6",
-      introduction: "Breaking generational patterns requires both courage and strategy. I'm here to help you write a new financial chapter while honoring your past and building a legacy for the future."
+      introduction: "Breaking generational patterns requires both courage and strategy. I'm here to help you write a new financial chapter while honoring your past and building a legacy for the future.",
+      expertise: ["Student loans", "Budgeting and saving"]
     },
     {
+      id: 7,
       name: "Mariah Hudler",
       title: "Financial Therapist",
       clients: ["creatives", "freelancers", "artists"],
@@ -67,9 +80,11 @@ const TherapistsList = [
       yoe: "9",
       song: "Freedom by Pharrell Williams",
       profileUrl: "https://i.pravatar.cc/300?img=7",
-      introduction: "Creative spirits need unique financial solutions. Together, we'll craft a money approach that supports your artistic journey while building sustainable financial practices."
+      introduction: "Creative spirits need unique financial solutions. Together, we'll craft a money approach that supports your artistic journey while building sustainable financial practices.",
+      expertise: ["Debt management"]
     },
     {
+      id: 8,
       name: "Emily Shull",
       title: "Financial Therapist",
       clients: ["parents", "families", "business owners"],
@@ -77,9 +92,11 @@ const TherapistsList = [
       yoe: "11",
       song: "Beautiful Day by U2",
       profileUrl: "https://i.pravatar.cc/300?img=8",
-      introduction: "Family dynamics and finances are deeply intertwined. I help you create harmony between your money goals and family values, building a legacy of financial wellness."
+      introduction: "Family dynamics and finances are deeply intertwined. I help you create harmony between your money goals and family values, building a legacy of financial wellness.",
+      expertise: ["Family planning", "Estate planning"]
     },
     {
+      id: 9,
       name: "Jasmine Ramirez",
       title: "Financial Therapist",
       clients: ["gen z", "students", "young entrepreneurs"],
@@ -87,9 +104,11 @@ const TherapistsList = [
       yoe: "5",
       song: "Rich Girl by Gwen Stefani",
       profileUrl: "https://i.pravatar.cc/300?img=9",
-      introduction: "Your generation faces unique financial challenges and opportunities. Let's harness your digital savvy and entrepreneurial spirit to create a money strategy that works for you."
+      introduction: "Your generation faces unique financial challenges and opportunities. Let's harness your digital savvy and entrepreneurial spirit to create a money strategy that works for you.",
+      expertise: ["Student loans", "Personal finance for beginners"]
     },
     {
+      id: 10,
       name: "Aitza",
       title: "Money Coach",
       clients: ["remote workers", "digital nomads", "freelancers"],
@@ -97,9 +116,11 @@ const TherapistsList = [
       yoe: "4",
       song: "Location by Khalid",
       profileUrl: "https://i.pravatar.cc/300?img=10",
-      introduction: "Location-independent living requires smart money management. I'll help you build financial systems that support your freedom while securing your future."
+      introduction: "Location-independent living requires smart money management. I'll help you build financial systems that support your freedom while securing your future.",
+      expertise: ["Small business finances", "Investing"]
     },
     {
+      id: 11,
       name: "Freeman Lopez",
       title: "Money Coach",
       clients: ["immigrants", "international students", "expats"],
@@ -107,9 +128,11 @@ const TherapistsList = [
       yoe: "6",
       song: "International Love by Pitbull",
       profileUrl: "https://i.pravatar.cc/300?img=11",
-      introduction: "Navigating finances across borders comes with unique challenges. Together, we'll create a financial strategy that works globally while building wealth locally."
+      introduction: "Navigating finances across borders comes with unique challenges. Together, we'll create a financial strategy that works globally while building wealth locally.",
+      expertise: ["Credit repair", "Personal finance for beginners"]
     },
     {
+      id: 12,
       name: "Tiffany Grant",
       title: "Money Coach",
       clients: ["millennials", "side hustlers", "debt payoff"],
@@ -117,9 +140,11 @@ const TherapistsList = [
       yoe: "8",
       song: "Bills, Bills, Bills by Destiny's Child",
       profileUrl: "https://i.pravatar.cc/300?img=27",
-      introduction: "Debt doesn't define you—it's just a chapter in your story. Let's create a plan to achieve financial freedom while building multiple income streams."
+      introduction: "Debt doesn't define you—it's just a chapter in your story. Let's create a plan to achieve financial freedom while building multiple income streams.",
+      expertise: ["Debt management", "Credit repair"]
     },
     {
+      id: 13,
       name: "Andrea Sampson",
       title: "Money Coach",
       clients: ["working moms", "career transitioners", "entrepreneurs"],
@@ -127,9 +152,11 @@ const TherapistsList = [
       yoe: "5",
       song: "Run the World by Beyoncé",
       profileUrl: "https://i.pravatar.cc/300?img=28",
-      introduction: "Balancing career, family, and finances takes strategy. I'll help you create systems that maximize your time and money while pursuing your dreams."
+      introduction: "Balancing career, family, and finances takes strategy. I'll help you create systems that maximize your time and money while pursuing your dreams.",
+      expertise: ["Family planning", "Small business finances"]
     },
     {
+      id: 14,
       name: "Porscha Johnson",
       title: "Money Coach",
       clients: ["real estate investors", "business owners", "wealth builders"],
@@ -137,9 +164,11 @@ const TherapistsList = [
       yoe: "7",
       song: "All About the Benjamins by Puff Daddy",
       profileUrl: "https://i.pravatar.cc/300?img=29",
-      introduction: "Building wealth is about making informed decisions today that compound tomorrow. Let's create a strategy that turns your financial goals into lasting legacy."
+      introduction: "Building wealth is about making informed decisions today that compound tomorrow. Let's create a strategy that turns your financial goals into lasting legacy.",
+      expertise: ["Investing", "Estate planning"]
     },
     {
+      id: 15,
       name: "Shani Tene",
       title: "Money Coach",
       clients: ["creators", "influencers", "online entrepreneurs"],
@@ -147,9 +176,11 @@ const TherapistsList = [
       yoe: "4",
       song: "Boss Lady by Queen Naija",
       profileUrl: "https://i.pravatar.cc/300?img=15",
-      introduction: "Digital success requires savvy money management. I'll help you turn your online influence into sustainable wealth while protecting your financial future."
+      introduction: "Digital success requires savvy money management. I'll help you turn your online influence into sustainable wealth while protecting your financial future.",
+      expertise: ["Small business finances"]
     },
     {
+      id: 16,
       name: "Jacqueline Schadeck",
       title: "Money Coach",
       clients: ["young professionals", "first-time investors", "career climbers"],
@@ -157,9 +188,11 @@ const TherapistsList = [
       yoe: "6",
       song: "Dreams and Nightmares by Meek Mill",
       profileUrl: "https://i.pravatar.cc/300?img=16",
-      introduction: "Early career decisions shape your financial future. Together, we'll create a roadmap that maximizes your earning potential and builds lasting wealth."
+      introduction: "Early career decisions shape your financial future. Together, we'll create a roadmap that maximizes your earning potential and builds lasting wealth.",
+      expertise: ["Investing", "Personal finance for beginners"]
     },
     {
+      id: 17,
       name: "Paige Victoria Williams",
       title: "Money Coach",
       clients: ["women entrepreneurs", "startup founders", "small business owners"],
@@ -167,9 +200,11 @@ const TherapistsList = [
       yoe: "5",
       song: "Work by Rihanna",
       profileUrl: "https://i.pravatar.cc/300?img=30",
-      introduction: "Female founders need tailored financial strategies. I'll help you scale your business while building personal wealth and financial independence."
+      introduction: "Female founders need tailored financial strategies. I'll help you scale your business while building personal wealth and financial independence.",
+      expertise: ["Small business finances", "Insurance"]
     },
     {
+      id: 18,
       name: "Vince Hollerman",
       title: "Money Coach",
       clients: ["corporate executives", "managers", "high earners"],
@@ -177,9 +212,11 @@ const TherapistsList = [
       yoe: "9",
       song: "Power by Kanye West",
       profileUrl: "https://i.pravatar.cc/300?img=18",
-      introduction: "High income should translate to high net worth. Let's optimize your finances to ensure your hard work creates lasting prosperity."
+      introduction: "High income should translate to high net worth. Let's optimize your finances to ensure your hard work creates lasting prosperity.",
+      expertise: ["Estate planning", "Insurance"]
     },
     {
+      id: 19,
       name: "Michael Rodriguez",
       title: "Money Coach",
       clients: ["latinos", "first-gen professionals", "immigrant families"],
@@ -187,9 +224,11 @@ const TherapistsList = [
       yoe: "7",
       song: "Mi Gente by J Balvin",
       profileUrl: "https://i.pravatar.cc/300?img=51",
-      introduction: "Tu historia financiera es única. Juntos, crearemos un plan que honre tus raíces mientras construimos un futuro próspero para ti y tu familia."
+      introduction: "Tu historia financiera es única. Juntos, crearemos un plan que honre tus raíces mientras construimos un futuro próspero para ti y tu familia.",
+      expertise: ["Home buying", "Family planning"]
     },
     {
+      id: 20,
       name: "Victoria Dambrozio",
       title: "Money Coach",
       clients: ["women in finance", "career changers", "professionals"],
@@ -197,9 +236,11 @@ const TherapistsList = [
       yoe: "6",
       song: "Woman by Doja Cat",
       profileUrl: "https://i.pravatar.cc/300?img=20",
-      introduction: "Financial empowerment starts with understanding your worth. Let's create strategies that align with your ambitions and secure your financial independence."
+      introduction: "Financial empowerment starts with understanding your worth. Let's create strategies that align with your ambitions and secure your financial independence.",
+      expertise: ["Investing"]
     },
     {
+      id: 21,
       name: "Jessenia",
       title: "Financial Therapist",
       clients: ["hispanic families", "business owners", "first-time investors"],
@@ -207,17 +248,20 @@ const TherapistsList = [
       yoe: "8",
       song: "Vivir Mi Vida by Marc Anthony",
       profileUrl: "https://i.pravatar.cc/300?img=21",
-      introduction: "El dinero es más que números—es el reflejo de tus valores y sueños. Juntos, transformaremos el estrés financiero en fortaleza para construir un futuro próspero."
+      introduction: "El dinero es más que números—es el reflejo de tus valores y sueños. Juntos, transformaremos el estrés financiero en fortaleza para construir un futuro próspero.",
+      expertise: ["Home buying", "Personal finance for beginners"]
     },
     {
+      id: 22,
       name: "Justin DeFoor",
       title: "Money Coach",
       clients: ["athletes", "entertainers", "high-net-worth individuals"],
       certifications: "FFC, CPWA",
       yoe: "10",
       song: "All I Do Is Win by DJ Khaled",
-      profileUrl: "https://i.pravatar.cc/300?img22",
-      introduction: "Peak performance in finance requires the same discipline as in your craft. Let's build a strategy that protects and grows your wealth for the long game."
+      profileUrl: "https://i.pravatar.cc/300?img33",
+      introduction: "Peak performance in finance requires the same discipline as in your craft. Let's build a strategy that protects and grows your wealth for the long game.",
+      expertise: ["Estate planning", "Insurance"]
     }
 ];
 export default TherapistsList;

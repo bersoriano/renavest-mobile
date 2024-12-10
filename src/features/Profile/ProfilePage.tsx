@@ -8,14 +8,41 @@ import {
   IonButton,
   IonBackButton,
   IonImg,
-  IonAvatar
+  IonChip
 } from '@ionic/react';
 import { useTheme } from '../../theme/ThemeProvider';
 import styles from './ProfilePage.module.css';
 import profilePhoto from '../../assets/blackgirl.png';
+import { useParams } from 'react-router-dom';
+import TherapistsList from '../../shared/config/therapistList';
+
+interface FinancialTherapist {
+  id: number;
+  name: string;
+  title: string;
+  clients: string[];
+  certifications: string;
+  yoe: string;
+  song: string;
+  profileUrl: string;
+  introduction: string;
+  expertise: string[];  
+}
 
 const Profile: React.FC = () => {
   const { colors } = useTheme();
+  const { id } = useParams<{ id: string }>();
+  const financialTherapist = TherapistsList.find(therapist => therapist.id === Number(id));
+
+  if (!financialTherapist) {
+    return (
+      <IonPage>
+        <IonContent>
+          <div>Therapist not found</div>
+        </IonContent>
+      </IonPage>
+    );
+  }
 
   return (
     <IonPage>
@@ -24,23 +51,32 @@ const Profile: React.FC = () => {
           <IonButtons slot="start">
             <IonBackButton defaultHref="/home" />
           </IonButtons>
-          <IonTitle>Profile</IonTitle>
+          <IonTitle>Your Therapist</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className={styles.pageContent}>
         <div className="profile-container">
           {/* Local image from assets folder */}
           <IonImg
-            src={profilePhoto}
+            src={financialTherapist.profileUrl}
             alt="Cool Girl"
           ></IonImg>          
           <div className={styles.container}>
             <div className={styles.buttonContainer}>
               <IonButton fill="outline">Request Meeting</IonButton>
-            </div>              
-            <h1>Fatima Lopez</h1>
-            <p>Fatima Lopez is a compassionate financial therapist dedicated to empowering first-generation immigrants and minorities to achieve financial stability and confidence.</p>
-            <p>With a deep understanding of the unique challenges faced by these communities, Fatima Lopez blends emotional support with practical financial strategies to help clients navigate money-related stress, build wealth, and align their finances with their personal values.</p>
+            </div>
+            <h1>{financialTherapist.name}</h1>
+              <p>Expertise:</p>
+              <div className={styles.chipContainer}>
+                  { financialTherapist.expertise.map((expertise, index) =>   
+                    <IonChip key={index}>{expertise}</IonChip>
+                  )}
+              </div>
+              <p>Certifications: {financialTherapist.certifications}</p>
+              <p>{financialTherapist.yoe} years of experience.</p>              
+            <p className={styles.intro}> "{financialTherapist.introduction}"</p>
+            <p><strong>🎵 Song:</strong> {financialTherapist.song}.</p>
+            <p>Typically works with: {financialTherapist.clients.join(", ")}</p>
           </div>            
         </div>
       </IonContent>

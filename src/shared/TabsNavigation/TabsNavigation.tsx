@@ -18,7 +18,7 @@ import {
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/home" component={HomePage} />
-          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/profile/:id" component={ProfilePage} />
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
@@ -30,11 +30,6 @@ import {
             <IonLabel>Home</IonLabel>
             {/* <IonBadge>6</IonBadge> */}
           </IonTabButton>
-
-          {/* <IonTabButton tab="profile" href="/profile">
-            <IonIcon icon={person} />
-            <IonLabel>Profile</IonLabel>
-          </IonTabButton> */}
         </IonTabBar>
       </IonTabs>
     );

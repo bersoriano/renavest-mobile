@@ -43,6 +43,21 @@ ion-chip {
 
 }
 
+.profileTitle {
+    line-height: 0;
+}
+
+.profileSong {
+    line-height: 2rem;
+}
+
+.profileIntroduction {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
 .profileImgContainer {
     position: relative;
 }

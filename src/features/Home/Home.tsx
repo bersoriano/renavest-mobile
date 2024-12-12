@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                 </div> */}
 
                 {TherapistsList.map((therapist, index) => (
-                    <IonCard key={index} className={styles.profileCard}>
+                    <IonCard onClick={()=> goToProfile(therapist.id)} key={index} className={styles.profileCard}>
                         <div className={styles.profileImgContainer}>
                             <IonImg
                                 className={styles.profileUrl}
@@ -86,12 +86,15 @@ const Home: React.FC = () => {
                             </IonLabel>                          
                         </div>
                         <IonCardHeader>
+                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}</IonCardSubtitle>
+                            <IonCardSubtitle className={styles.profileSong}>🎵 {therapist.song}</IonCardSubtitle>
                             <IonCardTitle className={styles.profileName}>{therapist.name}</IonCardTitle>
-                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}                              
-                            </IonCardSubtitle>
                         </IonCardHeader>
-                        <IonCardContent className={styles.profileIntroduction}>"{therapist.introduction}"</IonCardContent>
-                        <IonButton expand="block" fill="clear" onClick={()=> goToProfile(therapist.id)}>View Profile</IonButton>
+                        <IonCardContent>
+                            <div className={styles.profileIntroduction}>
+                                "{therapist.introduction}"                                
+                            </div>
+                            </IonCardContent>
                     </IonCard>
                 ))}
 

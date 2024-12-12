@@ -26,3 +26,7 @@ code {
 * {
   -ms-overflow-style: none;
 }
+
+:root {
+  color-scheme: light;
+}

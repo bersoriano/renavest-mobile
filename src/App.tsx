@@ -23,7 +23,7 @@ import '@ionic/react/css/display.css';
 
 // import '@ionic/react/css/palettes/dark.always.css';
 // import '@ionic/react/css/palettes/dark.class.css';
-import '@ionic/react/css/palettes/dark.system.css';
+//  import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
@@ -33,12 +33,7 @@ import AppRouter from './core/router/Routes'
 
 import { 
   IonApp,
-  IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
   setupIonicReact,
-  IonButton
 } from '@ionic/react';
 
 setupIonicReact({ mode: 'ios' });

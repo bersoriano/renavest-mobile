@@ -26,7 +26,10 @@ interface FinancialTherapist {
   song: string;
   profileUrl: string;
   introduction: string;
-  expertise: string[];  
+  expertise: string[];
+  bookingURL: string;
+  longBio: string;
+  previewBlurb: string;
 }
 
 const Profile: React.FC = () => {

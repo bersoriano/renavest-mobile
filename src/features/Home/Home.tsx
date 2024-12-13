@@ -81,18 +81,17 @@ const Home: React.FC = () => {
                                 src={therapist.profileUrl || profilePhoto}
                                 alt={therapist.name}
                             ></IonImg>
-                            <IonLabel className={styles.profileImgLabel}>
-                                <IonBadge color="primary" slot="end">Preferred</IonBadge>                            
-                            </IonLabel>                          
-                        </div>
-                        <IonCardHeader>
-                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}</IonCardSubtitle>
+                        <IonCardHeader className={styles.profileHeader}>                                                   
                             <IonCardSubtitle className={styles.profileSong}>🎵 {therapist.song}</IonCardSubtitle>
                             <IonCardTitle className={styles.profileName}>{therapist.name}</IonCardTitle>
-                        </IonCardHeader>
+                        </IonCardHeader>                            
+                        </div>
+                        <IonCardHeader>                                                   
+                            <IonCardSubtitle className={styles.profileTitle}>{therapist.title}</IonCardSubtitle>
+                        </IonCardHeader>                          
                         <IonCardContent>
                             <div className={styles.profileIntroduction}>
-                                "{therapist.introduction}"                                
+                                "{therapist.previewBlurb || therapist.introduction}"                                
                             </div>
                             </IonCardContent>
                     </IonCard>

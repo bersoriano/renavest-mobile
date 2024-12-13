@@ -69,6 +69,7 @@ const Profile: React.FC = () => {
               <IonButton fill="outline">Request Meeting</IonButton>
             </div>
             <h1>{financialTherapist.name}</h1>
+            <p><strong>🎵 Song:</strong> {financialTherapist.song}.</p>
               <p>Expertise:</p>
               <div className={styles.chipContainer}>
                   { financialTherapist.expertise.map((expertise, index) =>   
@@ -77,8 +78,7 @@ const Profile: React.FC = () => {
               </div>
               <p>Certifications: {financialTherapist.certifications}</p>
               <p>{financialTherapist.yoe} years of experience.</p>              
-            <p className={styles.intro}> "{financialTherapist.introduction}"</p>
-            <p><strong>🎵 Song:</strong> {financialTherapist.song}.</p>
+            <p className={styles.intro}> "{financialTherapist.longBio}"</p>
             <p>Typically works with: {financialTherapist.clients.join(", ")}</p>
           </div>            
         </div>

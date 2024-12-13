@@ -36,19 +36,26 @@ ion-chip {
     
 }
 
-.profileImgLabel {
+.profileHeader {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
 }
 
 .profileTitle {
-    line-height: 0;
+}
+
+.profileName {
+    color: white;
+    font-size: 2rem;    
 }
 
 .profileSong {
     line-height: 2rem;
+    color: white;
+    font-weight: 900;
+    font-size: .8rem;
 }
 
 .profileIntroduction {

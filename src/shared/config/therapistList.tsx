@@ -7,12 +7,12 @@ const TherapistsList = [
       certifications: "Bachelor's Degree in Biopsychology, Master's Degree in Medical Sciences – Liberty University (2022), Founder of the Millennium Money Master Program, Helped over 100 clients",
       yoe: "8",
       song:  "Upgrade U by Beyonce",
-      profileUrl: "https://bersoriano.github.io/renavest-mobile/pwilliams.jpg",
+      profileUrl: "https://bersoriano.github.io/renavest-mobile/pwilliams.jpeg",
       introduction: "Money is more than numbers—it's a reflection of your journey, values, and dreams. Together, we'll turn financial stress into strength and build a future that honors where you come from and where you're going.",
       expertise: ["Debt management", "Saving", "Investing"],
       bookingURL: "https://millenniummoney.myclickfunnels.com/bookacall1",
       longBio: "I'm a passionate Money Coach and Online Content Creator dedicated to empowering women to take full control of their finances and build long-term wealth. In just 5 months, I paid off $3,000 in credit card debt, saved $5,000 in an emergency fund, and invested $10,000—all while juggling grad school and part-time jobs. This transformation inspired me to create the Millennium Money Master Program, a high-impact coaching program that has helped over 100 clients achieve financial confidence through crushing debt, investing, and strategic money management. My mission is to make personal finance fun, attainable, and attractive while inspiring others to take action, no matter where they’re starting",
-      previewBlurb: ""
+      previewBlurb: "Empowering women to crush debt, invest smartly, and build lasting financial confidence."
     },
     {
       id: 2,

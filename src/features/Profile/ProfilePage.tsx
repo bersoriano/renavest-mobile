@@ -15,6 +15,7 @@ import styles from './ProfilePage.module.css';
 import profilePhoto from '../../assets/blackgirl.png';
 import { useParams } from 'react-router-dom';
 import TherapistsList from '../../shared/config/therapistList';
+import RequestMeeting from './RequestMeeting';
 
 interface FinancialTherapist {
   id: number;
@@ -66,8 +67,9 @@ const Profile: React.FC = () => {
           ></IonImg>          
           <div className={styles.container}>
             <div className={styles.buttonContainer}>
-              <IonButton fill="outline">Request Meeting</IonButton>
+              <IonButton fill="outline" id="open-modal" expand="block">Request Meeting</IonButton>
             </div>
+            <RequestMeeting meetingURL={financialTherapist.bookingURL}></RequestMeeting>
             <h1>{financialTherapist.name}</h1>
             <p><strong>🎵 Song:</strong> {financialTherapist.song}.</p>
               <p>Expertise:</p>
